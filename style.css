@@ -1,0 +1,67 @@
+body{
+    text-align: center;
+    background-color:gray;
+    font-size: 40px;
+    margin-top:10%;
+}
+h1{
+    font-size: 3em;
+    color:white;
+}
+
+@keyframes start {
+ 0%   {background-color: blue;}
+ 25%  {background-color: orange;}
+ 50%  {background-color: red;}
+ 100% {background-color: white;}
+}
+@keyframes pause {
+ 0%   {background-color: red;}
+ 25%  {background-color: yellow;}
+ 50%  {background-color: blue;}
+ 100% {background-color: green;}
+}
+@keyframes reset {
+ 0%   {background-color: green;}
+ 25%  {background-color: blue;}
+ 50%  {background-color: yellow;}
+ 100% {background-color: gray;}
+}
+
+.start:hover , .pause:hover , .reset:hover {
+ width: 200px;
+ height: 100px;
+ border-radius: 50%;
+}
+
+.start{
+    background-color: green;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    margin: 25px;
+    width: 150px;
+    height: 80px;
+    animation: start 5s infinite;
+    transition: width 2s, height 2s;
+}
+.pause{
+    background-color: blue;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    margin: 25px;
+    width: 150px;
+    height: 80px;
+    animation: pause 5s infinite;
+    transition: width 1s, height 1s;
+}
+.reset{
+    background-color: red;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    margin: 25px;
+    width: 150px;
+    height: 80px;
+    animation: reset 5s infinite;
+    transition: width 1s, height 1s;
+    
+}
